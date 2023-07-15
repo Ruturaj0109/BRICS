@@ -1,0 +1,330 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10vw;
+}
+img.nitw-logo {
+  max-width: 28vw;
+  margin-top: 10px;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 35vw;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-container div:nth-child(1) button {
+  background: rgb(101, 201, 75);
+  color: white;
+}
+
+.button-container div:nth-child(2) button {
+  background: rgb(71, 9, 214);
+  color: white;
+}
+
+.button-container div:nth-child(3) button {
+  background: rgb(192, 6, 37);
+  color: white;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+  margin-top: -18px;
+}
+
+#map {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  height: 64%;
+  overflow: scroll;
+  border: 0.5px solid #000000;
+}
+
+#legend{
+  z-index: 11;
+  padding: 4px 8px;
+  border: 2px solid grey;
+  position: absolute;
+  height: 50%;
+  overflow: scroll;
+  width:15%; 
+  left: 4%;
+  bottom:40%;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+#wms_layers_btn {
+  position: absolute;
+  z-index: 500;
+  top: 1%;
+  left: 60%;
+}
+
+#data {
+  width: 60%;
+}
+
+#table_data {
+  position: absolute;
+  bottom: 0%;
+  overflow: scroll;
+  left: 20%;
+  right: 0%;
+  height: 0%;
+  border: 1px solid #4CAF50;
+}
+
+#table {
+  white-space: nowrap;
+  grid-template-areas: "head-fixed" "body-scrollable";
+}
+
+#showData {
+  overflow: auto;
+  width: 100%;
+}
+
+#table th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  background-color: darksalmon;
+}
+
+#table_wms_layers {
+  white-space: nowrap;
+  border-collapse: separate;
+  font-family: arial;
+  font-size: 14px;
+}
+
+  #table_wms_layers th {
+      position: -webkit-sticky; /* for Safari */
+      position: sticky;
+      top: 0;
+      background-color: darksalmon;
+  }
+
+#clear_btn {
+  position: absolute;
+  z-index: 500;
+  top: 1%;
+  left: 75%;
+}
+
+.ol-mouse-position {
+  top: 3%;
+  right: 3%;
+  position: absolute;
+  font-weight: bold;
+}
+
+.layer-switcher.shown {
+  max-height: 465px;
+}
+
+#query_tab {
+  position: absolute;
+  padding: 0.5% 0%;
+  top: 4%;
+  height: 58%;
+  overflow: scroll;
+  width: 20%;
+  left: 0%;
+}
+
+.tab-content {
+  position: relative;
+  top: 1%;
+  width: 85%;
+  height: 85%;
+  /* //overflow: scroll;
+  // border: 1px solid blue; */
+}
+
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 280px;
+}
+
+  .ol-popup:after, .ol-popup:before {
+      top: 100%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+  }
+
+  .ol-popup:after {
+      border-top-color: white;
+      border-width: 10px;
+      left: 48px;
+      margin-left: -10px;
+  }
+
+  .ol-popup:before {
+      border-top-color: #cccccc;
+      border-width: 11px;
+      left: 48px;
+      margin-left: -11px;
+  }
+
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+
+  .ol-popup-closer:after {
+      content: "X";
+  }
+
+#measure {
+  position: absolute;
+  z-index: 50;
+  top: 1%;
+  /* // height:1%; */
+  left: 5%;
+}
+
+#getinfo {
+  position: absolute;
+  z-index: 50;
+  top: 1%;
+  /* //height:15px; */
+  left: 25%;
+}
+
+.tooltip {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.tooltip-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.tooltip-static {
+  background-color: #ffcc33;
+  color: black;
+  border: 1px solid white;
+}
+
+  .tooltip-measure:before,
+  .tooltip-static:before {
+      border-top: 6px solid rgba(0, 0, 0, 0.5);
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      margin-left: -7px;
+      left: 50%;
+  }
+
+  .tooltip-static:before {
+      border-top-color: #ffcc33;
+  }
+
+  button.btn-settings {
+    margin: 25px;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    background-color: #337ab7;
+    color: white;
+}
+
+    button.btn-settings:active {
+        color: white;
+    }
+
+.modal {
+    overflow: hidden;
+}
+
+.modal-dialog {
+    height: 300px;
+}
+
+.modal-header {
+    height: 30px;
+    padding: 20px;
+    background-color: #18456b;
+    color: white;
+}
+
+.modal-title {
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+.modal-header .close {
+    margin-top: -10px;
+    color: #fff;
+}
+
+.modal-body {
+    color: #888;
+    padding: 5px 35px 20px;
+}
+
+    .modal-body h3 {
+        text-align: center;
+    }
+
+    .modal-body p {
+        padding-top: 10px;
+        font-size: 1.1em;
+    }
