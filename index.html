@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://openlayers.org/en/v6.12.0/css/ol.css"/>
+    <link rel="stylesheet" href="./dist/ol-style.css" />
+    <!-- <link rel="stylesheet" href="./libs/ol-layerswitcher-master/ol-layerswitcher-master/dist/ol-layerswitcher.css" type="text/css"/> -->
+    <link rel="stylesheet" href="./style.css" type="text/css"/>
+
+    <title>India</title>
+</head>
+
+<body>
+    <div>
+        <img src="./brics-logo.png" alt="NITW" class="center" />
+        <div class="column">
+            <img src="./LOGO3.jpg" class="nitw-logo" alt="SA" />
+        </div>
+    </div>
+    <div class="button-container">
+        <div>
+            <a href="./index_brazil.html">
+                <button>RESULTS</button>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <button>RESULTS</button>
+            </a>
+        </div>
+        <div>
+            <a href="./index_south_africa.html">
+                <button>RESULTS</button>
+            </a>
+        </div>
+    </div>
+    <h2>
+        Development of Integrated Water resources Management Framework for the
+        selected watersheds of India, Brazil, South Africa
+    </h2>
+    <h3>Under Climate Change Scenarios</h3>
+    <script src="https://openlayers.org/en/v6.12.0/build/ol.js"></script>
+    <script src="./dist/ol-main.js"></script>
+    <script src="main_india.js" type="text/javascript"></script>
+    <!-- <script src="./libs/jquery.min.js" type="text/javascript"></script> -->
+    
+
+    <div id="map">
+        <div id="legend"></div>
+        <form id="measure">
+            <label>Measurement type &nbsp;</label>
+            <select id="measuretype">
+                <option value="select">Select Measure option</option>
+                <option value="length">Length (LineString)</option>
+                <option value="area">Area (Polygon)</option>
+                <option value="clear">Clear Measurement</option>
+            </select>
+        </form>
+        <form id="getinfo">
+            <label>GetFeatureinfo&nbsp;</label>
+            <select id="getinfotype">
+                <option value="select">Select option</option>
+                <option value="activate_getinfo">Activate GetFeatureinfo</option>
+                <option value="deactivate_getinfo">Deactivate GetFeatureinfo</option>
+            </select>
+        </form>
+    </div>
+    <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+    </div>
+    <div id="info">&nbsp;</div>
+</body>
+
+</html>
